@@ -6,7 +6,7 @@ from loader import bot
 def get_text(message) -> None:
     """
         Отслеживание вводимого приветствия пользователем.
-        :param message: сообщение пользователя (приветствие).
+        :param message: Сообщение пользователя (приветствие).
         :return: None
     """
     if message.text.lower() == 'привет':
@@ -17,7 +17,7 @@ def get_text(message) -> None:
 def bot_echo(message: Message):
     """
         Отслеживание вводимого текста вне команд бота. Работает в виде echo.
-        :param message: сообщение пользователя.
+        :param message: Сообщение пользователя.
         :return: None
     """
     bot.reply_to(message, "Эхо без состояния или фильтра.\nСообщение:"
